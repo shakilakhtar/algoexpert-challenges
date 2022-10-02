@@ -4,9 +4,11 @@ public class NthFibonacci {
 
     public static int getNthFib(int n) {
         // base case
-        int[] lastTwo = new int[2];
         if(n <= 1){
-            return n;
+            return 0;
+        }
+        if (n == 2){
+            return 1;
         }
 
         return   getNthFib(n-2) + getNthFib(n-1);
